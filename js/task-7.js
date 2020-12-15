@@ -24,7 +24,6 @@ const addLogin = function (allLogins, login) {
 
   allLogins.push(login);
   message = "Логин успешно добавлен!";
-  console.log(logins);
   return message;
 };
 
@@ -32,4 +31,3 @@ console.log(addLogin(logins, "Ajax"));
 console.log(addLogin(logins, "robotGoogles"));
 console.log(addLogin(logins, "Zod"));
 console.log(addLogin(logins, "jqueryisextremelyfast"));
-console.log(addLogin(logins, "jquer"));
