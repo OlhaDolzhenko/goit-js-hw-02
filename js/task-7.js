@@ -12,12 +12,12 @@ const isLoginUnique = function (allLogins, login) {
 
 const addLogin = function (allLogins, login) {
   let message;
-  if (isLoginValid(login) === false) {
+  if (!isLoginValid(login)) {
     message = "Ошибка! Логин должен быть от 4 до 16 символов";
     return message;
   }
 
-  if (isLoginUnique(allLogins, login) === true) {
+  if (isLoginUnique(allLogins, login)) {
     message = "Такой логин уже используется!";
     return message;
   }
